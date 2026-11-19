@@ -18,14 +18,19 @@
 
 - Every source, configuration and documentation file must contain **100 lines or fewer**.
 - Split larger files into cohesive files with distinct responsibilities; do not split artificially.
-- Use meaningful file and folder names, normally no more than three words.
-- Name files by their responsibility or content, e.g. `import records`, `validate sources`, `search service`.
-- Avoid vague names such as `stuff`, `helpers`, `common` or `data` when a precise name is possible.
-- Prefer plural names for collections, e.g. `unit tests` and `regression tests`.
+- Use meaningful file and folder names, normally no more than three words, following the repository's `snake_case` convention.
+- Name files by their responsibility or content, e.g. `import_records.py`, `source_validation.py`, `search_service.py`.
+- Name every folder after the responsibility or clearly defined category of the items it contains. A folder name must make its intended contents understandable without opening it.
+- Keep each folder focused on one cohesive responsibility; do not use a folder as an unexplained dumping ground or create it before its purpose and contents are known.
+- Use names that distinguish the folder from neighbouring folders; avoid vague names such as `stuff`, `helpers`, `common` or `data` when a precise name is possible.
+- Prefer plural names for folders that hold collections, e.g. `unit_tests/` and `regression_tests/`; use singular names when the folder represents one domain or responsibility, e.g. `lexicon/`.
+- Apply the same naming rules to nested folders. Their names should communicate their role within the parent context.
+- Preserve framework-required names and standard conventions, even when they differ from the project's preferred naming style.
 - Avoid one-word names unless a standard convention or genuine technical need requires one.
 - Preserve standard names such as `.env`, `.gitignore`, `README.md` and `pyproject.toml`.
 - Follow the repository's established casing and separator convention consistently.
 - Test files should identify the component or behaviour being tested.
+- Do not create empty folders merely to anticipate possible future work; retain only approved structural placeholders that are part of the agreed architecture.
 
 ## 3. SOLID Principles
 
