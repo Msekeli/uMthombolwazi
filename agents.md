@@ -41,8 +41,10 @@ Read `AI_DEVELOPMENT_GUIDELINES.md` before making changes. These instructions ap
 
 - Keep each file at 100 lines or fewer.
 - Split larger files by cohesive responsibility, not arbitrarily.
-- Use meaningful file and folder names, normally no more than three words.
-- Prefer plural names for collections, such as `unit tests` and `regression tests`.
+- Use meaningful file and folder names, normally no more than three words, following the repository's `snake_case` convention.
+- Every folder name must communicate its responsibility or the category of items it contains; its intended contents should be clear without opening it.
+- Keep folders focused, apply the rule to nested folders, and prefer plural names for collections (e.g. `unit_tests/`, `regression_tests/`).
+- Do not create unexplained dumping-ground folders or empty folders for speculative future work.
 - Preserve standard filenames and framework-required conventions.
 - See `AI_DEVELOPMENT_GUIDELINES.md` for the complete naming and design rules.
 
